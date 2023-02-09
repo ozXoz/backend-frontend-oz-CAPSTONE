@@ -7,8 +7,8 @@ import Create from './components/Create'
 function App() {
   return (
     <div className="App">
-      {/* <DataDisplay></DataDisplay> */}
-      <Create></Create>
+      <DataDisplay></DataDisplay>
+      {/* <Create></Create> */}
     </div>
   );
 }

@@ -3,7 +3,8 @@ import axios from "axios";
 import { useState, useEffect } from 'react';
 console.log("top")
 
-const BASE_URL = "https://backend-oz.onrender.com"
+const BASE_URL = "https://backend-oz.onrender.com/home"
+
 
 
 const DataDisplay = () => {
@@ -11,7 +12,7 @@ const DataDisplay = () => {
     useEffect(() => {
         const getAllInfo = async () => {
             try {
-                const res = await axios.get(`${BASE_URL}/home/user/register/result`);
+                const res = await axios.get(`${BASE_URL}/register/user/result`);
                 console.log("test here")
                 setGetValue(res.data)
 
