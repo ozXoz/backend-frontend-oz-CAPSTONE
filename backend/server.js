@@ -45,9 +45,9 @@ app.listen(SERVER_PORT,()=>{
 
 
 // Route     For Register
-app.use("home",regisRoutes)
-app.use("home",loginRoutes)
-app.use("home",registerTutorRoutes)
+app.use("/home",regisRoutes)
+app.use("/home",loginRoutes)
+app.use("/home",registerTutorRoutes)
 
 
 

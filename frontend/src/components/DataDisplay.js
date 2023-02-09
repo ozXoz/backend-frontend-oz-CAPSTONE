@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from 'react';
 console.log("top")
 
-const BASE_URL = "https://nodejs-express-mongodb-backend-crud.onrender.com"
+const BASE_URL = "https://backend-oz.onrender.com"
 
 
 const DataDisplay = () => {

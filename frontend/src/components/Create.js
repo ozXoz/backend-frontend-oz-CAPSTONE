@@ -16,14 +16,12 @@ const Create = () => {
     const handleChange = (e) => {
         setNewUser(prev => ({ ...prev, [e.target.name]: e.target.value }));
     }
-    const BASE_URL = "https://nodejs-express-mongodb-backend-crud.onrender.com"
+    const BASE_URL = "https://backend-oz.onrender.com/home"
 
     const handleClick = async e => {
         e.preventDefault()
         try {
-            axios.post(`${BASE_URL}/home/user/register`,
-                        
-            newUser)
+            axios.post(`${BASE_URL}/register/user`,newUser) // change
             console.log(newUser);
         } catch (error) {
 
